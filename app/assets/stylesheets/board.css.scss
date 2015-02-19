@@ -1,0 +1,53 @@
+body{
+  top: 0;
+  background: #FEF1F9;
+}
+
+#main{
+  // width: auto;
+  position: relative;
+  &:after{
+    content: "";
+    display: block;
+    clear: both
+  }
+}
+
+
+.boards{
+  list-style-type: none;
+  &:after{
+    content: "";
+    display: block;
+    clear: both
+  }
+}
+
+.boards > li {
+  float: left;
+  display: inline-block;
+  background-color: #BD2C6B;
+  width: 300px;
+  margin-top: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 25px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.board-name > a{
+  color: white;
+}
+
+.delete-board{
+  float: right
+}
+
+.new-board{
+  display: none;
+}
+
+.new-board.showing{
+  display: block;
+}

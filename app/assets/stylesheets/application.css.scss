@@ -1,0 +1,46 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require jquery-ui
+ *= require_tree .
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+
+.navbar{
+  background: #751C42;
+  margin: 0;
+  .navbar-brand{
+    color: white;
+    font-family: 'Satisfy', cursive;
+    font-size: 36px;
+    &:hover{
+      color: white;
+    }
+    &:focus{
+      color: white;
+    }
+  }
+  button, input{
+    background-color: #BD2C6B;
+    border-color: #BD2C6B;
+    &:hover{
+      background-color: #BD2C6B;
+      border-color: white
+    }
+    &:active{
+      background-color: #BD2C6B;
+      border-color: #BD2C6B;
+    }
+  }
+}
