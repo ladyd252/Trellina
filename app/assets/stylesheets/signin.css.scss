@@ -1,0 +1,27 @@
+
+
+.input-group-addon
+{
+    background-color: #751C42;
+    border-color: #751C42;
+    color: rgb(255, 255, 255);
+}
+.form-control:focus
+{
+    // background-color: white;
+    border-color: #751C42;
+    color: black;
+}
+
+.sign-up-btn{
+  background-color: #751C42;
+  border-color: #751C42;
+  &:hover, &:active, &:focus{
+    background-color: #751C42;
+    border-color: #751C42;
+  }
+}
+
+.form-container{
+  margin: 50px;
+}

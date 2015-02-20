@@ -1,4 +1,4 @@
-<h1>Sign In</h1>
+<!-- <h1>Sign In</h1>
 
 <form action="/session" method="post">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
@@ -9,4 +9,36 @@
     <input name="user[password]" type="password"><br>
   </label><br>
   <input type="submit" value="Submit" class="btn btn-primary"><br>
-</form>
+</form> -->
+
+
+<div class="form-container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h5 class="text-center">
+                        LOG IN</h5>
+                    <form class="form form-signup" role="form" action="/session" method="post">
+                      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                            </span>
+                            <input name="user[email]" type="email" class="form-control" placeholder="Email Address" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                            <input type="password" name="user[password]" class="form-control" placeholder="Password" />
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" class="sign-up-btn btn btn-sm btn-primary btn-block" role="button">
+                  </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
