@@ -13,6 +13,12 @@ body{
   }
 }
 
+.board-index{
+  h1{
+    margin-left: 100px;
+  }
+}
+
 
 .boards{
   list-style-type: none;
@@ -34,6 +40,10 @@ body{
   margin-bottom: 25px;
   height: 100px;
   border-radius: 5px;
+  // -webkit-box-shadow: 10px 10px 14px -8px rgba(87,78,87,1);
+  // -moz-box-shadow: 10px 10px 14px -8px rgba(87,78,87,1);
+  // box-shadow: 10px 10px 14px -8px rgba(87,78,87,1);
+
 }
 
 .board-name > a{
@@ -44,10 +54,20 @@ body{
   float: right
 }
 
-.new-board{
-  display: none;
+.add-board{
+  color: white;
+  &:hover{
+    cursor: pointer;
+    color: white;
+  }
 }
 
-.new-board.showing{
-  display: block;
+.new-board{
+  input{
+    margin-bottom: 5px;
+  }
+  .btn-success{
+    background-color: #751C42;
+    border-color: #601736;
+  }
 }

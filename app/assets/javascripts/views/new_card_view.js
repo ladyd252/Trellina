@@ -1,12 +1,18 @@
 TrelloClone.Views.NewCardView = Backbone.View.extend({
   template: JST["new_card"],
   events: {
-    "submit .new-card" : "addCard"
+    "submit .new-card" : "addCard",
+    "click .display-card-form" : "showCardForm"
   },
 
   initialize: function(options){
     this.list = options.list;
   },
+
+  showCardForm: function(event){
+    this.$(".new-card").addClass("showing");
+  },
+
 
   addCard: function(){
     event.preventDefault();

@@ -1,5 +1,19 @@
-<button class="add-board">Add a board! </button>
-<form class="new-board">
-  <input type="TEXT" name="board[title]">
-  <input type="submit" value="Create a new board!">
-</form>
+<h3 class="add-board" data-toggle="modal" data-target="#myModal">Add a board! </h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Add a new board!</h4>
+      </div>
+      <div class="modal-body">
+        <form class="new-board">
+          <input type="TEXT" name="board[title]">
+          <input class="btn btn-success" type="submit" value="Create a new board!">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

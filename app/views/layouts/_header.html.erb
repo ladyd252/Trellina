@@ -13,13 +13,8 @@
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav navbar-right">
     <% if signed_in? %>
-      <li id='add-dropdown' class='dropdown'>
-        <button
-          class='dropdown-toggle navbar-btn btn btn-primary'
-          data-toggle='dropdown'><span class='glyphicon glyphicon-plus'></span>
-        </button>
-      </li>
       <li><%= button_to "Sign out", session_url, method: :delete, class: "btn btn-primary navbar-btn" %></li>
+      <li><a class="index-link" href="<%=root_path%>"><button class="btn btn-primary navbar-btn">My Boards </button></a></li>
     <% else %>
       <li><%= link_to "Log in", new_session_url %></li>
       <li><%= link_to "Sign up", new_user_url %></li>

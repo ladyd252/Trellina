@@ -20,6 +20,9 @@
 .navbar{
   background: #751C42;
   margin: 0;
+  a.index-link{
+    display: inline;
+  }
   .navbar-brand{
     color: white;
     font-family: 'Satisfy', cursive;
@@ -31,7 +34,7 @@
       color: white;
     }
   }
-  button, input{
+  button.btn-primary, input{
     background-color: #BD2C6B;
     border-color: #BD2C6B;
     &:hover{
@@ -42,5 +45,13 @@
       background-color: #BD2C6B;
       border-color: #BD2C6B;
     }
+    &:focus{
+      background-color: #BD2C6B;
+      border-color: #BD2C6B;
+    }
   }
+}
+
+p, h1, h2, h3, h4, div, span{
+  font-family: 'Source Sans Pro', sans-serif;
 }

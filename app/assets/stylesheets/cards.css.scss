@@ -1,0 +1,49 @@
+.cards{
+  padding: 0;
+}
+
+.cards:after{
+  content: "";
+  display: block;
+  clear: both
+}
+
+.cards > div{
+  padding: 2px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 1.5px 1.5px 2px #888888;
+}
+
+.cards > div:hover{
+  /*background: #6EF5E2;*/
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #888888;
+}
+
+.cards > div:active{
+  -ms-transform: rotate(9deg); /* IE 9 */
+  -webkit-transform: rotate(9deg); /* Chrome, Safari, Opera */
+  transform: rotate(9deg);
+}
+
+.cards:last-child{
+  margin-bottom: 5px;
+}
+
+
+.new-card{
+  display: none;
+}
+
+.new-card.showing{
+  display: block;
+}
+
+.display-card-form:hover{
+  cursor: pointer;
+  color: white;
+}
