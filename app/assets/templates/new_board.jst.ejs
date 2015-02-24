@@ -1,7 +1,7 @@
 <h3 class="add-board" data-toggle="modal" data-target="#myModal">Add a board! </h3>
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
       <div class="modal-header">
@@ -10,7 +10,7 @@
       </div>
       <div class="modal-body">
         <form class="new-board">
-          <input type="TEXT" name="board[title]">
+          <input type="TEXT" name="board[title]" autofocus>
           <input class="btn btn-success" type="submit" value="Create a new board!">
         </form>
       </div>
